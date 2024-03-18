@@ -229,12 +229,12 @@ img{
 }
 
 .yes-btn{
-    margin-left: 15%;
+    margin-left: 230px;
 }
 
 .no-btn{
     position: absolute;
-    margin-left: 20%;
+    margin-left: 300px;
 }
 
 .hide{
