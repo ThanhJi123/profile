@@ -5,18 +5,19 @@
 }
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
 body{
+    width: 100%;
     height: 100vh;
-    background: linear-gradient(to right, #4daf54, #3d8880);
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Poppins";
+    background: linear-gradient(to right, #4daf54, #3d8880);;
     color: white;
 }
 
@@ -24,6 +25,7 @@ body{
     background: #242628;
     width: 300px;
     height: 400px;
+    margin:  100px;
     border-radius: 10px;
     text-align: center;
     overflow: hidden;
@@ -39,8 +41,8 @@ img{
 .card_img{
     width: 120px;
     height: 120px;
-    /* background: url(image001_2.jpg);
-    background-size: cover; */
+    /* background: url(anh/anh_1.jpg); */
+    background-size: cover;
     border: 4px solid var(--primary_color);
     border-radius: 50%;
     overflow: hidden;
@@ -72,7 +74,7 @@ img{
     color: var(--primary_color);
 }
 
-.card button{
+.open-modal-btn{
     width: 150px;
     height: 40px;
     border: 1px solid var(--primary_color);
@@ -85,6 +87,176 @@ img{
 .card button:hover{
     background: var(--primary_color);
 }
+
+/* .open_infor{
+    width: 150px;
+    height: 40px;
+    border: 1px solid var(--primary_color);
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+} */
+
+
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.6);
+
+
+    
+}
+
+.test{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.te{
+    display: none;
+}
+
+.noiDung-test{
+    width: 450px;
+    height: 300px;
+    position: relative;
+    padding: 10px;
+    padding-top: 20px;
+    top: 30%;
+    margin: auto ;
+    background: white;
+    color: #000;
+    border-radius: 5px;
+    overflow: hidden;
+    animation: modalShow 0.2s linear;
+
+}
+
+.noiDung-test h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.gif{
+    width: 120px;
+    height: 120px;
+    margin-left: 35%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+
+.modal-iner{
+    width: 400px;
+    position: relative;
+    top: 30%;
+    margin: auto ;
+    background: white;
+    color: #000;
+    border-radius: 5px;
+    overflow: hidden;
+    animation: modalShow 0.2s linear;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: red;
+}
+.modal-header p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    
+}
+
+.modal-body{
+    padding: 15px;
+}
+
+.modal-body h2{
+    color: red;
+    margin-bottom: 10px;
+}
+
+.modal-body p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.modal-footer{
+    padding: 15px;
+    /* text-align: right; */
+}
+.no-btn{
+
+}
+
+.modal-header i{
+    cursor: pointer;
+}
+
+.modal-footer{
+    padding-bottom: 50px;
+}
+
+.modal-footer button{
+    position: fixed;
+    /* margin-left: 15%; */
+    padding: 10px 20px;
+    color: white;
+    background: red;
+    border-radius: 5px;
+    /* border: none; */
+    border: 3px solid var(--primary_color);
+    outline: none;
+    cursor: pointer;
+}
+
+.yes-btn{
+    margin-left: 15%;
+}
+
+.no-btn{
+    position: absolute;
+    margin-left: 20%;
+}
+
+.hide{
+    display: none;
+}
+
+@keyframes modalShow{
+    from{
+        top: -200px;
+        opacity: 0;
+    }
+    to{
+        top: 30%;
+        opacity: 1;;
+    }
+}
+
+
+
+
+
+/* ............... */
 
 .card:hover .card_img{
     visibility: visible;
@@ -99,4 +271,168 @@ img{
     transform: unset;
     /* border: none; */
 }
+
+/* music */
+
+.container{
+    width: 350px;
+    height: 550px;
+    border-radius: 20px;
+    background: var(--primary_color);
+    box-shadow: 0 40px 90px var(--primary_color);
+    padding: 30px;
+    overflow: hidden;
+    color: white;
+}
+.song-name,.artist{
+    text-align: center;
+    text-transform: capitalize;
+}
+.song-name{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.artist{
+    font-size: 15px;
+}
+.box-disk{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    background: url(anh/anh_1.jpg) no-repeat top left;
+    background-size: cover;
+    box-shadow: 0 0 0 5px #000;
+    animation: rotate 20s linear infinite;
+    animation-play-state: paused;
+}
+.box-disk.play{
+    animation-play-state: running;
+}
+.box-disk::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--primary_color);
+}
+.music-slider{
+    width: 100%;
+    float: left;
+    position: relative;
+}
+.seek-bar{
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background: white;
+    -webkit-appearance: none;
+    cursor: pointer;
+    overflow: hidden;   
+}
+.seek-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 1px;
+    height: 20px;
+    background: forestgreen;
+    box-shadow: -400px 0 0 400px royalblue;
+}
+.current-time,.music-time{
+    font-size: 12px;
+}
+.music-time{
+    position: absolute;
+    float: left;
+    right: 0;
+}
+.controls{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+}
+.btn-play{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #000;
+    cursor: pointer;
+    border: none;
+}
+.btn-play span{
+    position: absolute;
+    top:50%;
+    left: 25%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 30px;
+    border-radius: 2px;
+    background: beige;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transition: .5s;
+}
+.btn-play span:nth-child(2){
+    left: 55%;
+    transform-origin: center;
+}
+.btn-play.pause span:nth-child(2){
+    transform:translateY(-50%) scaleY(0);
+}
+.btn-play.pause span:nth-child(1){
+    width: 35%;
+    left: 53%;
+    transform:translate(-50%,-50%);
+    border-radius: 0;
+    clip-path: polygon(0 0, 100% 50%, 100% 50%, 0% 100%);
+}
+
+.btn-play.pause{
+    animation: pulse 2s linear infinite;
+}
+
+@keyframes pulse{
+    0%{
+        box-shadow: 0;
+    }
+    50%{
+        box-shadow: 0 0 0 5px #000;
+    }
+    100%{
+        box-shadow: 0 0 0 5px #000;
+    }
+}
+
+
+.btn{
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0);
+    }
+   
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 
