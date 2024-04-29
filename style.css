@@ -9,6 +9,14 @@
     padding: 0px;
     box-sizing: border-box;
 }
+.row{
+    float: left;
+    width: 100%;
+}
+.ct{
+    width: 1200px;
+    margin: 0 auto;
+}
 
 body{
     width: 100%;
@@ -444,19 +452,19 @@ img{
     flex-basis: 100%;
 }
 
-.container{
+/* .container{
     flex-basis: 100%;
-}
+} */
 
-@media (min-width: 300px){
+/* @media (min-width: 300px){
     .card {
-        /* margin-top: auto;    576*/
+        margin-top: auto;    576
         flex-basis: 43%;
     }
     .container {
         flex-basis: 50%;
     }
-}
+} */
 /* 
 @media (min-width: 768px) {}
 @media (min-width: 992px) {}
@@ -468,7 +476,7 @@ img{
     display: none;
 } */
 
-.card{
+/* .card{
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -480,4 +488,4 @@ img{
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-}
+} */

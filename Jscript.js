@@ -173,3 +173,15 @@ function changeImage(x,image)
     }
 }
 
+// const typed = new Typed('.multiple-text', {
+//     strings: ['Newbie','Programmer'],
+//     typeSpeed:100,
+//     backSpend:100,
+//     backDelay:100,
+//     loop:true
+// });
+
+// var typed = new Typed('#element', {
+//     strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+//     typeSpeed: 50,
+//   });

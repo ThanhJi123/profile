@@ -11,6 +11,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <!-- <span id="element"></span> -->
+    <div class="row">
+        <div class="ct">
     <div class="contet">
 
 
@@ -20,8 +23,9 @@
             onmouseover="changeImage(1,this)"
             onmouseout="changeImage(2,this)">
         </div>
-        <h2>Thanh Vỹ</h2>
-        <p>Newbie</p>
+        <h2><span id="element1"></span>Thanh Vỹ</h2>
+        <p><span id="element"></span></p>
+
         <div class="card_social">
             <a href="https://www.facebook.com/profile.php?id=61554968876042">
                 <i class='bx bxl-facebook-circle'></i>
@@ -95,7 +99,35 @@
 
     </div>
 </div>
+</div>
+</div>
     <script src="song.js"></script>
     <script src="Jscript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- <script>
+    var typed = new Typed("#element", {
+      strings: ["Newbie", "Programmer"],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true,
+    }); -->
+    </script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Newbie', 'Programmer','Developers'],
+          typeSpeed: 200,
+          backSpeed: 150,
+          loop: true,
+        });
+      </script>
+    <!-- <script>
+    var typed = new Typed("#element1", {
+      strings: ["Thanh Vỹ", "ThanhJĩ"],
+      typeSpeed: 500,
+      backSpeed: 150,
+      loop: true,
+    });
+    </script> -->
 </body>
 </html>
