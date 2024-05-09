@@ -447,7 +447,7 @@ img{
 
 .contet{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .card{
@@ -469,7 +469,22 @@ img{
 }
 
 @media (min-width: 768px) {}
-@media (min-width: 992px) {}
+@media (max-width: 992px) {
+    .contet{
+        display: grid;
+        /* display: inline-block; */
+        /* grid-template-columns: 1fr; */
+        margin-top: 500px;
+    }
+    .container{
+        margin-bottom: 100px;
+        margin-top: -50px;
+    }
+    .card{
+        margin: 300px auto;
+        
+    }
+}
 @media (min-width: 1200px) {}
 
 
