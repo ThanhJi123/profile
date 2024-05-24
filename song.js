@@ -18,6 +18,18 @@ let songs = [
         image:'anh/anh_khong_the_say.jpg'
     },
     {
+        name:'them bao nhieu lau',
+        path:'nhac/them_bao_nhieu_lau.mp3',
+        artist:'Đạt G',
+        image:'anh/them_bao_nhieu_lau.jpg'
+    },
+    {
+        name:'anh tu do nhung co don',
+        path:'nhac/anh_tu_do_nhung_co_don.mp3',
+        artist:'Đạt G',
+        image:'anh/anh_tu_do_nhung_co_don.jpg'
+    },
+    {
         name:'Thien An oi !!!',
         path:'nhac/thien_an.mp3',
         artist:'JACK',
