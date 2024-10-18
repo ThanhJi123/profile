@@ -10,7 +10,15 @@ const musictime=document.querySelector('.music-time');
 const btnplay=document.querySelector('.btn-play');
 const btnback=document.querySelector('.btnback');
 const btnnext=document.querySelector('.btnnext');
+const volume = document.getElementById("volume");
+let sound = 0.5;
 
+volume.addEventListener("input", (e) => {
+  music.volume = e.target.value;
+  //console.log(e.target.value)
+});
+
+//volume.addEventListener("cha")
 
 btnplay.addEventListener('click',()=>{
     if(btnplay.className.includes('pause')){
@@ -185,3 +193,4 @@ function changeImage(x,image)
 //     strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
 //     typeSpeed: 50,
 //   });
+

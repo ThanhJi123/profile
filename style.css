@@ -78,6 +78,7 @@ img{
     color: white;
     margin: 25px 20px;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .card_social a:hover{
@@ -354,6 +355,31 @@ img{
     background: forestgreen;
     box-shadow: -400px 0 0 400px royalblue;
 }
+.volume-slider{
+    /* display: flex; */
+    /* position: absolute; */
+}
+.volume{
+    width: 50%;
+    height: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    background: white;
+    -webkit-appearance: none;
+    cursor: pointer;
+    overflow: hidden;   
+}
+.volume::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 1px;
+    height: 20px;
+    background: forestgreen;
+    box-shadow: -400px 0 0 400px royalblue;
+}
+.btn-volume{
+    background: none;
+    border: none;
+}
 .current-time,.music-time{
     font-size: 12px;
 }
@@ -482,10 +508,15 @@ img{
     }
     .card{
         margin: 300px auto;
+        /* margin-right: 50px; */
         
     }
 }
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .card{
+        margin-right: 50px;
+    }
+}
 
 
 .thu{
